@@ -4,7 +4,7 @@ import Person from './Person';
 import axios from 'axios';
 
 const fetchPeople = async(key,page)=>{
-  const res = await fetch(`https://cors-anywhere.herokuapp.com/http://swapi.dev/api/people/?page=${page}`);
+  const res = await fetch(`http://swapi.dev/api/people/?page=${page}`);
   return res.json();
 }
 
